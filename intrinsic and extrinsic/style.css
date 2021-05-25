@@ -1,0 +1,20 @@
+.awesome {
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1;
+    border: 5px solid;
+    padding: 2rem;
+
+    /* the important extrinsic width */
+    width: 320px;
+}
+
+.awesome[data-sizing="intrinsic"] {
+    width: min-content;
+}
+
+/* presentational style */
+.awesome {
+    --flow-space: 2rem;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extrinsic sizing vs Intrinsic sizing</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <article class="flow">
+                <h1>Extrinsic sizing vs intrinsic sizing</h1>
+                <figure class="callout">
+                    <p>Notice that when the box is using <strong>extrinsic sizing</strong>
+                    there's a limit of how much content you can add before it overflows out 
+                of the box's bounds.
+            this makes the word "Awesome" overflow.</p>
+                </figure>
+                <label class="toggle" for="intrinsic-switch">
+                    <span class="toggle__label">
+                        turn on intrinsic sizing
+                    </span>
+                    <input type="checkbox" role="switch" class="toggle__element" id="intrinsic-switch" />
+                    <div class="toggle_decor" aria-hidden="true">
+                        <div class="toggle_thumb">
+
+                        </div>
+                    </div>
+                </label>
+                <p class="awesome" data-element="awesome">CSS is Awesome!</p>
+            </article>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
